@@ -1,6 +1,6 @@
 # See https://www.dartlang.org/guides/libraries/private-files
 
-node_modules/
+node_modules
 README.md
 robots.txt
 *.ico
