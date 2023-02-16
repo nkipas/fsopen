@@ -2,7 +2,6 @@ import { useState} from 'react'
 
 const App = () => {
     const [n, setn] = useState('')
-    const [a, seta] = useState([])
     const [no, setno] = useState('')
     const [o, seto] = useState([{ n: "Arto Hellas", no: "044 123", }])
 
@@ -21,7 +20,6 @@ const App = () => {
         setn('')
         setno('')
     }
-    console.log(a)
     return (
         <>
         <h2>Phonebook</h2>
