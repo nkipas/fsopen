@@ -35,7 +35,9 @@ const App = () => {
         </div>
         </form>
         <h2>Numbers</h2>
-            {o.map((o,i) => <p key={i}>{o.n} {o.no}</p>)}
+        <ul>
+            {o.map((o,i) => <li key={i}>{o.n} {o.no}</li>)}
+        </ul>
         </>
     )
 }
