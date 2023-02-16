@@ -6,8 +6,6 @@ const App = ({ n }) => {
     const [a, seta] = useState('')
     const [s, sets] = useState(true)
 
-    console.log(m)
-    console.log(Math.random() > 0.5)
     const add = (e) => {
         e.preventDefault()
         const o = {
