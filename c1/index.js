@@ -47,8 +47,8 @@ app.get('/api/notes', (q, s) => {
 
 const getrev = () => {
     let m = Math.max(...notes.map(n => n.id))
-    if (m < persons.length)
-        m = persons.length
+    if (m < notes.length)
+        m = notes.length
     else m = m + 1
     return m
 }
@@ -82,7 +82,7 @@ app.get('/api/notes/:id', (q, s) => {
         s.status(404).end()
     
     s.json(n)
-}
+})
 
 app.delete('/api/notes/:id', (q, s) => {
     const id = Number(q.params.id)
@@ -98,5 +98,5 @@ app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
 
-}
+
 
