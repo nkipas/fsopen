@@ -37,9 +37,9 @@ let notes = [
     }
 ]
 
-app.get('/', (q, s) => {
-    s.send('<h1>Hello World</h1>')
-})
+//app.get('/', (q, s) => {
+//    s.send('<h1>Hello World</h1>')
+//})
 
 app.get('/api/notes', (q, s) => {
     s.json(notes)
