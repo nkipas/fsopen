@@ -16,8 +16,10 @@ const update = (id, newObject) => {
     return q.then(s => s.data)
 }
 
-export default {
+const exports = {
     getAll,
     create,
-    update
-}
+    update,
+};
+
+export default exports
